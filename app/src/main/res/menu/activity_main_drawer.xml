@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Home"
+            android:id="@+id/nav_home"
+           />
+        <item
+            android:id="@+id/searchFragment"
+            android:title="Search for House"/>
+        <item
+            android:id="@+id/addProperty"
+            android:title="Add Property"/>
+        <item
+            android:id="@+id/trustedAgents"
+            android:title="Trusted Agents" />
+        <item
+            android:id="@+id/makeRequestFragment"
+            android:title="Make Request"/>
+        <item
+            android:id="@+id/housingStandardFragment"
+            android:title="Minimum Housing Standard"/>
+        <item
+            android:id="@+id/termOfUseFragment"
+            android:title="Term of Use"/>
+
+
+
+        <item
+            android:id="@+id/register2Fragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Register"/>
+        <item
+            android:id="@+id/logIn2Fragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Log in"/>
+
+        <item
+            android:id="@+id/logOut2Fragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Log Out"
+
+            />
+    </group>
+</menu>

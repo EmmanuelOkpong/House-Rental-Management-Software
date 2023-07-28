@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rightCardView"
+        android:layout_width="160dp"
+        android:layout_height="210dp"
+        android:layout_margin="10sp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/twoupperroundcorner"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/leftCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/leftHousePics"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/twobottmcornerround"
+                android:scaleType="fitXY"
+                android:src="@drawable/house"
+                app:layout_constraintBottom_toTopOf="@+id/leftHousePrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/menuicon1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/leftHouseDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 bedroom Flat"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.321"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/leftHousePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#200,000/year"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/leftHouseDes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.31"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="44dp"
+                app:cardCornerRadius="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="1dp"
+                    android:text="Verified"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:src="@drawable/baseline_verified_24"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/leftCardView"
+        android:layout_width="160dp"
+        android:layout_height="210dp"
+        android:layout_margin="10sp"
+        android:background="@drawable/twoupperroundcorner"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/rightCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/rightHousePics"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/twobottmcornerround"
+                android:scaleType="fitXY"
+                android:src="@drawable/house2"
+                app:layout_constraintBottom_toTopOf="@+id/rightHousePrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/menuicon1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rightHouseDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 bedroom Flat"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.321"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/rightHousePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#200,000/year"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/rightHouseDes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.31"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="44dp"
+                app:cardCornerRadius="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="1dp"
+
+                    android:text="Verified"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:src="@drawable/baseline_verified_24"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

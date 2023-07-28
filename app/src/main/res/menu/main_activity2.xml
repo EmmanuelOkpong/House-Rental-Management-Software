@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/aboutFragment"
+        android:orderInCategory="100"
+        android:title="About"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/contactFragment"
+        android:orderInCategory="100"
+        android:title="Contact"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/supportFragment"
+        android:orderInCategory="100"
+        android:title="Support"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/FAQFragment"
+        android:orderInCategory="100"
+        android:title="FAQ"
+        app:showAsAction="never" />
+</menu>

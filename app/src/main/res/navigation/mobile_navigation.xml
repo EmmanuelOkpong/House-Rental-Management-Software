@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.rentsease.mainsection.ui.home.HomeFragment"
+        android:label="Homes"
+        tools:layout="@layout/fragment_home" />
+        <!-- tools:layout="@layout/fragment_home"
+        android:name="com.example.rentsease.mainsection.MainActivity2"
+        android:name="com.example.rentsease.mainsection.ui.home.HomeFragment"-->
+
+
+    <fragment
+        android:id="@+id/makeRequest"
+        android:name="com.example.rentsease.mainsection.ui.gallery.GalleryFragment"
+        android:label="Make Request"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/trustedAgents"
+        android:name="com.example.rentsease.mainsection.ui.slideshow.SlideshowFragment"
+        android:label="Trusted Agents"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.rentsease.mainsection.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.rentsease.mainsection.ui.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_home2" />
+    <fragment
+        android:id="@+id/addProperty"
+        android:name="com.example.rentsease.mainsection.ui.listyourhouse.ListYourHouseFragment"
+        android:label="Add Property"
+        tools:layout="@layout/fragment_list_your_house" />
+    <fragment
+        android:id="@+id/housingStandardFragment"
+        android:name="com.example.rentsease.mainsection.ui.housingStandard.HousingStandardFragment"
+        android:label="Minimum Housing Standard"
+        tools:layout="@layout/fragment_housing_standard" />
+    <fragment
+        android:id="@+id/makeRequestFragment"
+        android:name="com.example.rentsease.mainsection.ui.makerequest.MakeRequestFragment"
+        android:label="Make Request"
+        tools:layout="@layout/fragment_make_request" />
+    <fragment
+        android:id="@+id/termOfUseFragment"
+        android:name="com.example.rentsease.mainsection.ui.Termsofuse.TermOfUseFragment"
+        android:label="Term of Use"
+        tools:layout="@layout/fragment_term_ofuse" />
+    <fragment
+        android:id="@+id/logIn2Fragment"
+        android:name="com.example.rentsease.mainsection.ui.login2.LogIn2Fragment"
+        android:label="Log In"
+        tools:layout="@layout/fragment_log_in2" />
+    <fragment
+        android:id="@+id/logOut2Fragment"
+        android:name="com.example.rentsease.mainsection.ui.logout2.LogOut2Fragment"
+        android:label="Log Out"
+        tools:layout="@layout/fragment_log_out2" />
+    <fragment
+        android:id="@+id/register2Fragment"
+        android:name="com.example.rentsease.mainsection.ui.register2.Register2Fragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register2" />
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.example.rentsease.mainsection.ui.faq.FAQFragment"
+        android:label="Frequently Ask Question"
+        tools:layout="@layout/fragment_f_a_q" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.rentsease.mainsection.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.rentsease.mainsection.ui.contact.ContactFragment"
+        android:label="Contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.example.rentsease.mainsection.ui.support.SupportFragment"
+        android:label="Support"
+        tools:layout="@layout/fragment_support" />
+</navigation>
